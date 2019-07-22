@@ -1,0 +1,24 @@
+﻿@model RSSActivityApp.Models.RSSData
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="header">
+    <h2>Check RSS Inactivity</h2>
+</div>
+<div class="body">
+    <p>
+        Use this site to search for RSS feeds based on length of inactivity.
+    </p>
+
+    @*<input type="text" placeholder="Enter # of days..." id="NumOfDays" />*@
+    @Html.TextBoxFor(x => x.NumOfDays, new { placeholder = "Enter # of days..." })
+    @Html.ValidationMessageFor(h => h.NumOfDays)
+    <button id="btn" class="btn btn-default" type="submit" onclick="GetRssData(document.getElementById('NumOfDays').value)">Get RSS Data</button>
+
+    <div id="feeds"></div>
+</div>
+
+<div class="footer">
+    &#169; @DateTime.Now.Year MooreVM Inc.
+</div>

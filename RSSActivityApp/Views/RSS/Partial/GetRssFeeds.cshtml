@@ -1,0 +1,21 @@
+﻿@model RSSActivityApp.Models.RSSData
+
+<div style="padding-top:20px;">
+    @if (Model.RssFeeds.Count > 0)
+    {
+        <table>
+            @foreach (KeyValuePair<string, string> item in Model.RssFeeds)
+            {
+                <tr>
+                    <td class="results">
+                        <a href="@Html.Raw(item.Value)" alt="@Html.Raw(item.Key)" target="_blank" on="CopyToClipboard(this);">@Html.Raw(item.Key)</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <p id="emptymsg">There are no RSS feeds that have been inactive for the past <span id="numOfDaysMsg"></span> days. Change your search criteria and try again.</p>
+    }
+</div>

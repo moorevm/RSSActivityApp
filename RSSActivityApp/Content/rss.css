@@ -1,0 +1,70 @@
+﻿html, body{
+    font-family: Arial;
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    display: block;
+    color: #feffff !important;
+    width: 500px !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 10px !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    background-color: #2b7a78 !important;
+}
+
+.header {
+    background-color: #2b7a78;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    margin: 0;
+    color: #feffff;
+}
+
+.body {
+    padding: 10px 10px 30px 20px;
+    background-color: #def2f1;
+    height: 100%;
+    margin: 0;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    background-color: #3aafa9;
+    padding: 7px 7px 7px 7px;
+    color: #17252a;
+    width: 100%;
+}
+
+#emptymsg {
+    padding: 20px 10px 0 20px;
+}
+
+#NumOfDays {
+    border-radius: 8px;
+    padding: 6px 12px;
+    vertical-align: middle;
+    border: 1px solid #d3d3d3;
+}
+
+#btn {
+    border-radius: 8px;
+    background-color: #17252a;
+    color: #feffff;
+}
+
+.results {
+    border: 1px solid #2b7a78;
+    background-color: #3aafa9;
+    color: #feffff !important;
+    text-decoration: none;
+    width: 500px;
+}
+
